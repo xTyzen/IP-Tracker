@@ -73,7 +73,6 @@ def ip():
         with tempfile.NamedTemporaryFile(delete=False, suffix=".html") as temp_file:
             map_path = temp_file.name
             mymap.save(map_path)
-            print(f"Carte enregistrée sous '{map_path}'.")
 
         webbrowser.open(f'file://{map_path}')
 
